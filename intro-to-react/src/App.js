@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import MainComponent from './components/MainComponent';
 import ImageComponent from './components/ImageComponent';
+import { dogArr } from './dummyData/dogData';
 
 function App() {
 
@@ -18,15 +19,16 @@ function App() {
       <MainComponent />
       <Footer /> */}
       <div id='image-container'>
-        <ImageComponent imageLink='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOBVTu1tFNzJo6yBJaHLw0UdgpjkeJm7xpyw&s' breedName='German Shepherd' />
-        <ImageComponent imageLink={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlNX5ruElvvaPwOuYJf4JrQF7Stlbumlll2Q&s'} breedName={'Husky'} />
+        {/* <ImageComponent imageLink='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOBVTu1tFNzJo6yBJaHLw0UdgpjkeJm7xpyw&s' breedName='German Shepherd' /> 
+        <ImageComponent imageLink={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlNX5ruElvvaPwOuYJf4JrQF7Stlbumlll2Q&s'} breedName={'Husky'} /> 
         <ImageComponent imageLink={'https://thumbs.dreamstime.com/b/beagle-dog-portrait-outdoors-beautiful-37970158.jpg'} breedName={'Beagle'} />
-        <ImageComponent imageLink={'https://images.unsplash.com/photo-1568315056770-f4a63027dcd3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnVsbGRvZ3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000'} breedName={'Bull Dog'}/>
+        <ImageComponent imageLink={'https://images.unsplash.com/photo-1568315056770-f4a63027dcd3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnVsbGRvZ3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000'} breedName={'Bull Dog'}/> */}
         {/* props */}
+
+        {dogArr.map((dogObj, i) => <ImageComponent imageLink={dogObj.imageLink} breedName={dogObj.breedName} />)}
       </div>
     </>)
 }
-
 
 
 /*
@@ -48,3 +50,5 @@ export default App;  // in one file we can have only one default export
 // JSX allows us to write HTML in React
 // JSX makes it easier to write and add HTML in React
 // JSX syntax -> JS + HTML
+
+// JSX will not support normal 
