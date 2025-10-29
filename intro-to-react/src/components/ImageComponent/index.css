@@ -1,0 +1,19 @@
+#image-component {
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid black; */
+    margin: 2rem;
+}
+
+img {
+    object-fit: cover;
+    height: 400px !important;
+    width: 100%;
+}
+h3{
+    text-align: center;
+}
+.image-card {
+    /* width: 30%; */
+    height: 350px !important;
+}
