@@ -17,3 +17,13 @@ h3{
     /* width: 30%; */
     height: 350px !important;
 }
+button {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

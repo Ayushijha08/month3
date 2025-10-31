@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import MainComponent from './components/MainComponent';
 import ImageComponent from './components/ImageComponent';
 import { dogArr } from './dummyData/dogData';
+import Counter from './components/Counter';
 
 function App() {
 
@@ -25,8 +26,10 @@ function App() {
         <ImageComponent imageLink={'https://images.unsplash.com/photo-1568315056770-f4a63027dcd3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnVsbGRvZ3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000'} breedName={'Bull Dog'}/> */}
         {/* props */}
 
-        {dogArr.map((dogObj, i) => <ImageComponent imageLink={dogObj.imageLink} breedName={dogObj.breedName} />)}
+        {dogArr.map((dogObj, i) => <ImageComponent id={i} imageLink={dogObj.imageLink} breedName={dogObj.breedName} />)}
+        <Counter />
       </div>
+      
     </>)
 }
 
