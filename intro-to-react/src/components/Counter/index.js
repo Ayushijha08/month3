@@ -19,6 +19,9 @@ function Counter() {
     setCount(count + 1)  // count's initial value is 0  => 0 + 1 = 1
     console.log(count);  // here the count value will be same as previous value because setCount is an asynchronous function
   }
+
+
+  
   return (
     <div>
       <p>Counter: {count}</p>

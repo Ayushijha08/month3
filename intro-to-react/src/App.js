@@ -6,6 +6,7 @@ import MainComponent from './components/MainComponent';
 import ImageComponent from './components/ImageComponent';
 import { dogArr } from './dummyData/dogData';
 import Counter from './components/Counter';
+import UseEffectComp from './components/useEffectComp';
 
 function App() {
 
@@ -27,7 +28,9 @@ function App() {
         {/* props */}
 
         {/* {dogArr.map((dogObj, i) => <ImageComponent id={i} imageLink={dogObj.imageLink} breedName={dogObj.breedName} />)} */}
-        <Counter />
+        {/* <Counter /> */}
+        {/* <Footer /> */}
+        <UseEffectComp />
       </div>
       
     </>)
