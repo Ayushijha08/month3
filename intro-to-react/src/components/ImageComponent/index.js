@@ -2,7 +2,7 @@ import { dogArr } from '../../dummyData/dogData';
 import './index.css';
 
 function ImageComponent({ id, imageLink, breedName }) {
-
+    // const { id, imageLink, breedName } = props;
     return (
         <div id={`image-component`}>
             <div className="image-card">
