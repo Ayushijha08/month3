@@ -7,6 +7,8 @@ import ImageComponent from './components/ImageComponent';
 import { dogArr } from './dummyData/dogData';
 import Counter from './components/Counter';
 import UseEffectComp from './components/useEffectComp';
+import Location from './components/Location';
+import ObjStateHandling from './components/ObjStateHandling';
 
 function App() {
 
@@ -20,7 +22,7 @@ function App() {
       {/* <Header />
       <MainComponent />
       <Footer /> */}
-      <div id='image-container'>
+      {/* <div id='image-container'> */}
         {/* <ImageComponent imageLink='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOBVTu1tFNzJo6yBJaHLw0UdgpjkeJm7xpyw&s' breedName='German Shepherd' /> 
         <ImageComponent imageLink={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlNX5ruElvvaPwOuYJf4JrQF7Stlbumlll2Q&s'} breedName={'Husky'} /> 
         <ImageComponent imageLink={'https://thumbs.dreamstime.com/b/beagle-dog-portrait-outdoors-beautiful-37970158.jpg'} breedName={'Beagle'} />
@@ -30,9 +32,11 @@ function App() {
         {/* {dogArr.map((dogObj, i) => <ImageComponent id={i} imageLink={dogObj.imageLink} breedName={dogObj.breedName} />)} */}
         {/* <Counter /> */}
         {/* <Footer /> */}
-        <UseEffectComp />
-      </div>
-      
+        {/* <UseEffectComp /> */}
+        
+      {/* </div> */}
+      {/* <Location /> */}
+      <ObjStateHandling />
     </>)
 }
 
