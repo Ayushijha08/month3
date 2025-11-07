@@ -9,6 +9,8 @@ import Counter from './components/Counter';
 import UseEffectComp from './components/useEffectComp';
 import Location from './components/Location';
 import ObjStateHandling from './components/ObjStateHandling';
+import Tictactoe from './components/Tictactoe';
+import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
 
@@ -16,6 +18,7 @@ function App() {
   const breed = 'German Shepherd'
   return (
     <>
+    <ToastContainer />
       {/* <div>App</div>
       <h1>Hello App</h1>
       <h2>This is h2</h2> */}
@@ -30,13 +33,14 @@ function App() {
         {/* props */}
 
         {/* {dogArr.map((dogObj, i) => <ImageComponent id={i} imageLink={dogObj.imageLink} breedName={dogObj.breedName} />)} */}
-        {/* <Counter /> */}
+        <Counter />
         {/* <Footer /> */}
         {/* <UseEffectComp /> */}
         
       {/* </div> */}
       {/* <Location /> */}
-      <ObjStateHandling />
+      {/* <ObjStateHandling /> */}
+      <Tictactoe />
     </>)
 }
 
