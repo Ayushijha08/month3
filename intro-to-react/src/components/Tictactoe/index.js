@@ -71,7 +71,7 @@ function Tictactoe() {
 
 
   return (
-    <div>
+    <div id='tictactoe'>
       <h1>{isCross ? "Circle turn": "Cross Turn"}</h1>
       <div className='grid'>
         {arr.map((item, index) => (

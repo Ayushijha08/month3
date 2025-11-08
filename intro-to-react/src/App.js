@@ -33,14 +33,14 @@ function App() {
         {/* props */}
 
         {/* {dogArr.map((dogObj, i) => <ImageComponent id={i} imageLink={dogObj.imageLink} breedName={dogObj.breedName} />)} */}
-        <Counter />
+        {/* <Counter /> */}
         {/* <Footer /> */}
-        {/* <UseEffectComp /> */}
+        <UseEffectComp />
         
       {/* </div> */}
       {/* <Location /> */}
       {/* <ObjStateHandling /> */}
-      <Tictactoe />
+      {/* <Tictactoe /> */}
     </>)
 }
 
