@@ -11,6 +11,8 @@ import Location from './components/Location';
 import ObjStateHandling from './components/ObjStateHandling';
 import Tictactoe from './components/Tictactoe';
 import { ToastContainer, toast } from 'react-toastify';
+import ControlledComp from './components/ControlledComp';
+import GitHubInfo from './components/GitHubInfo';
 
 function App() {
 
@@ -35,12 +37,14 @@ function App() {
         {/* {dogArr.map((dogObj, i) => <ImageComponent id={i} imageLink={dogObj.imageLink} breedName={dogObj.breedName} />)} */}
         {/* <Counter /> */}
         {/* <Footer /> */}
-        <UseEffectComp />
+        {/* <UseEffectComp /> */}
         
       {/* </div> */}
       {/* <Location /> */}
       {/* <ObjStateHandling /> */}
       {/* <Tictactoe /> */}
+      {/* <ControlledComp /> */}
+      <GitHubInfo />
     </>)
 }
 
