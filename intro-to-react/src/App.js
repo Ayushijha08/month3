@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -13,11 +13,13 @@ import Tictactoe from './components/Tictactoe';
 import { ToastContainer, toast } from 'react-toastify';
 import ControlledComp from './components/ControlledComp';
 import GitHubInfo from './components/GitHubInfo';
+import CommonComponent from './components/common';
 
 function App() {
 
   const app = 'Ayushi'
   const breed = 'German Shepherd'
+  const [name, setname] = useState('')
   return (
     <>
     <ToastContainer />
@@ -44,7 +46,9 @@ function App() {
       {/* <ObjStateHandling /> */}
       {/* <Tictactoe /> */}
       {/* <ControlledComp /> */}
-      <GitHubInfo />
+      {/* <GitHubInfo /> */}
+      <CommonComponent comp='abc' setname={setname} />
+      <div>Parent Comp: {name}</div>
     </>)
 }
 
