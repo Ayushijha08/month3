@@ -14,6 +14,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import ControlledComp from './components/ControlledComp';
 import GitHubInfo from './components/GitHubInfo';
 import CommonComponent from './components/common';
+import Unsplash from './components/Unsplash';
 
 function App() {
 
@@ -47,8 +48,9 @@ function App() {
       {/* <Tictactoe /> */}
       {/* <ControlledComp /> */}
       {/* <GitHubInfo /> */}
-      <CommonComponent comp='abc' setname={setname} />
-      <div>Parent Comp: {name}</div>
+      {/* <CommonComponent comp='abc' setname={setname} />
+      <div>Parent Comp: {name}</div> */}
+      <Unsplash />
     </>)
 }
 
