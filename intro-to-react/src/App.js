@@ -14,7 +14,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import ControlledComp from './components/ControlledComp';
 import GitHubInfo from './components/GitHubInfo';
 import CommonComponent from './components/common';
-import Unsplash from './components/Unsplash';
+import Unsplash from './components/Unsplash/Unsplash';
+// import Unsplash from './components/Unsplash';
 
 function App() {
 

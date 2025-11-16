@@ -18,8 +18,8 @@ h3{
     height: 350px !important;
 }
 button {
-    display: block;
-    margin: 1rem auto;
+    /* display: block;
+    margin: 1rem auto; */
     padding: 0.5rem 1rem;
     background-color: #4CAF50;
     color: white;
